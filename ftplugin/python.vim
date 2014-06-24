@@ -1,5 +1,5 @@
 " Name:          quittabs (global plugin)
-" Version:       1.0
+" Version:       1.1
 " Author:        Kevin Borgolte <kevin@borgolte.me>
 " Updates:       http://github.com/cao/quittabs
 " Purpose:       Simplify life by wiping all Python buffers out that use tabs
@@ -16,5 +16,5 @@
 :DetectIndent
 if !&l:expandtab
     echo bufname("%") . " is using tabs. Goodbye."
-    :bw
+    :bw!
 endif
